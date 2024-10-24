@@ -16,7 +16,12 @@ manifest:
       remote: zephyrproject-rtos
       repo-path: zephyr
       revision: main
-      import: true
+      import:
+        name-allowlist:
+          - mbedtls
+          - zcbor
+          - hal_nxp
+          - cmsis
     
       
   self:
